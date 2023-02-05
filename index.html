@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+</head>
+<body class="bg-amber-200">
+<div class="container mx-auto px-4">
+    <h1 class="block w-full text-center font-bold text-4xl mb-6 mt-16">ToDo App</h1>
+    <div class="flex p-4">
+        <span class="flex-1 text-center text-teal-900">Item count: <span id="item-count">0</span></span>
+        <span class="flex-1 text-center text-teal-900">Unchecked count: <span id="unchecked-count">0</span></span>
+    </div>
+    <div class="flex shadow bg-white rounded-md p-2">
+        <input id="todo-input" class=" w-full border-none  text-gray-700 p-2" type="text" placeholder="Today's agenda..." maxlength="50" required>
+        <div onClick="newTodo();" class="bg-green-500 hover:bg-green-400 rounded text-white p-2 pl-5 pr-5 cursor-pointer">
+            <span class="font-semibold text-teal-100 text-sm cursor-pointer">Add</span>
+        </div>
+    </div>
+    <div id="todo-list"></div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
