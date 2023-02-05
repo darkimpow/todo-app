@@ -33,12 +33,17 @@ addButton.addEventListener("click", () => { //This line adds a click event liste
 
 //This line adds a click event listener to the todoList. When an element inside the todoList is clicked, the code inside the arrow function will be executed.
 todoList.addEventListener("click", event => {
-
+//this line is checking if the element that was clicked has the class delete-button.
     if (event.target.classList.contains("delete-button")) {
+        //if the condition is true, this line will remove the parent element of the delete button (which is a <div> element).
         event.target.parentElement.remove();
+        //This line decrements the count of items in the list by 1.
         count--;
+        //This line decrements the count of unchecked items in the list by 1.
         unchecked--;
+        //This line updates the item-count element in the HTML with the new value of the count variable.
         itemCount.innerHTML = count;
+        //this line updates the unchecked-count element in the HTML with the new value of the unchecked variable.
         uncheckedCount.innerHTML = unchecked;
     }
 });
