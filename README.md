@@ -7,5 +7,6 @@ This app was created for organization of daily task's at hand. With this app you
 * Responsively
 ### App Snippet
 <img src="https://i.imgur.com/NnJyEfj.png">
+
 ### App Demo
 * https://todo-app-dusky-five.vercel.app/
